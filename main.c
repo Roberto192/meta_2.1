@@ -1,34 +1,27 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#defibe
-
-typedef struct _ticket{
-    char categoria[16];
-    char concepto[200];
-    float costo;
-}sTicket;
-
-typedef sTicket *Ticket;
+#include "lib.h"
 
 int main(){
 
-    //Captura de datos
-    Ticket tickets;
-    
-    while(termina == SALIR){
-        termina = menu();
-        switch(termina){
+    int opcion = 0;
+    Tickets alimentos = {.pos = 0};
+    Tickets diversion = {.pos = 0};
+    Tickets pagos_fijos = {.pos = 0};
+
+    while(opcion != SALIR){
+        opcion = menu();
+
+        switch(opcion){
             case 1:
-                capturarDatos(tickets, N);
+                capturarDatos(&alimentos, &diversion, &pagos_fijos);
             break;
             case 2:
-                mostrarAlimentos(tickets, N);
-                break;
+            break;
+            case 3:
+            break;
+            case 4:
+            break;
         }
     }
-
-    mostrarDatos();
 
     return 0;
 }
