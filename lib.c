@@ -10,3 +10,7 @@
 int menu(){
 
 }
+
+void capturarDatos(Tickets *alimentos,Tickets *diversion, Tickets *pagos_fijos){
+    
+}
