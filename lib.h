@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX 30
 #define SALIR 5
@@ -16,5 +17,8 @@ typedef struct _tickets{
 }Tickets;
 
 int menu();
-void capturarDatos(Tickets *alimentos,Tickets *diversion, Tickets *pagos_fijos);
-
+void capturarDatos(Tickets *alimentos, Tickets *diversion, Tickets *pagos_fijos);
+void mostrarGastoAlimentos(Tickets *alimentos);
+void mostrarGastoDiversion(Tickets *diversion);
+void mostrarGastoPagosFijos(Tickets *pagos_fijos);
+void swap(Ticket *xp, Ticket *yp);
